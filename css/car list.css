@@ -1,0 +1,40 @@
+body
+{
+
+    line-height: normal;
+}
+h1
+{
+    text-transform: capitalize;
+    font-size: larger;
+
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+.listpage
+{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.car
+{
+    border: solid black 1px;
+    padding: 10px;
+    margin: 10px;
+    text-shadow: 10px;
+    box-shadow: 10px;
+    
+}
+
+.car,img
+
+{
+    
+}
+img:hover
+{
+
+
+}
