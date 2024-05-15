@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarMark - Payment and Checkout</title>
+  <link rel="stylesheet" href="../css/Payment-and-Checkout.css">
+</head>
+<body style="background-image: url('./IMAGE/Payment\ Check\ Logo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></bodystyle>
+  <div class="container">
+    <img id="carmark_logo" src="./IMAGE/carmark_logo.jpg" alt="">
+    <h1>Payment and Checkout</h1>
+    <form id="checkout-form">
+      <div class="payment-method-container">
+        <label for="payment-method">Select Payment Method:</label>
+        <div class="payment-method">
+          <select id="payment-method" required>
+            <option value="">Select Payment Method</option>
+            <option value="visa">VISA</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="paypal">PayPal</option>
+            <option value="amex">AMEX</option>
+          </select>
+          
+        </div>
+      </div>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" placeholder="Enter your card number" required>
+      <label for="expiry-date">Expiry Date:</label>
+      <input type="text" id="expiry-date" placeholder="MM/YY" required>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" placeholder="Enter CVV" required>
+      <button type="submit" id="pay-btn">Pay Now</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="../js/Payment-and-Checkout.js"></script>
+</body>
+</html>
