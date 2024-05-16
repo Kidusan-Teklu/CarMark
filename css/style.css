@@ -1,7 +1,7 @@
 @import url('https://fonnts.googleapis.com/css?family=poppins:wght@300;400;500;600;700&display=swap');
 {
     margin:0;
-    padding:0;
+    padding:0px;
     box-sizing:border-box;
     font-family:'poppins',sans-serif;
     align-items:center;

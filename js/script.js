@@ -18,11 +18,9 @@ allstar.foreach((item,idx)=>{
       
 }else{
       allstar[i].style.setproperty('--i ,click)
-                  click++   
+                  click++  ; 
 
 
     }
                 }
                 }}
-                }}
-    
