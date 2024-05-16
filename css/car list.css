@@ -7,12 +7,31 @@ h1
 {
     text-transform: capitalize;
     font-size: larger;
-
+    box-shadow: lightblue 5px 10px 10px;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-weight: lighter;
 }
+.search
+{
+    display: flex;
+ 
+}
+input
+{
+  font-size: 15px;  
+  border-radius: 10px;
+  border: green 1px solid;
+  text-align: left;
+  padding-left: 20px;
+  background-color: lightgreen;
+  font-weight: bolder;
+  width: 20%;
+  height: 30px;
+}
+
+
 .listpage
 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -20,21 +39,30 @@ h1
 }
 .car
 {
-    border: solid black 1px;
+    border: solid black 0px;
     padding: 10px;
     margin: 10px;
-    text-shadow: 10px;
-    box-shadow: 10px;
+    
     
 }
-
+.car:hover
+{
+    text-shadow: 10px 5px 10px lightskyblue;
+    box-shadow: 5px 5px 10px lightsalmon;
+    border: solid rgb(0, 0, 0) 1px;
+}
 .car,img
 
 {
-    
+
 }
 img:hover
 {
 
 
+}
+script alert
+
+{
+    width: 100%;
 }
