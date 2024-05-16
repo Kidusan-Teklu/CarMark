@@ -81,6 +81,35 @@ textarea {
     resize:none;
     margin-bottom:.5rem;
 }
+.rating-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rating-section h3 {
+    margin-right: 10px;
+}
+
+.stars {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.stars .star {
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.stars .star.active {
+    color: #ffc107;
+}
+
+.rating-value {
+    font-size: 18px;
+    font-weight: bold;
+}
 .btn-group{
     display:flex;
     grid-gap: -5rem;
