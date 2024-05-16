@@ -1,6 +1,5 @@
 @import url('https://fonnts.googleapis.com/css?family=poppins:wght@300;400;500;600;700&display=swap');
 {
-
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -14,11 +13,10 @@
     --light:#F5F5F5;
     --grey:#AAA;
     --white:#FFF;
-    --shadow:8px 8px 30px rgba(0,0,0,.05)
-
+    --shadow:8px 8px 30px rgba(0,0,0,.05);
 }
 body{
-    background: #F5F5F5;
+    background: var(--light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,13 +28,14 @@ body{
     padding: 2rem;
     max-width: 500px;
     width: 100%;
-    border-radius: 75rem;
+    border-radius: .75rem;
     box-shadow: var(--shadow);
     text-align: center;
 }
 .wrapper h3{
     font-size: 1rem;
     font-weight: 250;
+    margin-bottom:1rem;
     font-family: sans-serif;
     color: #fe7;
 }
