@@ -20,7 +20,8 @@ allstar.foreach((item,idx)=>{
       allstar[i].style.setproperty('--i ,click)
                   click++   
 
-      ]
+
+    }
                 }
                 }}
                 }}
