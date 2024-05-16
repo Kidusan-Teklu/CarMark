@@ -1,3 +1,4 @@
+        // for the slider 
 // Get all the slider containers
 var sliderContainers = document.querySelectorAll(".slider-container");
 
@@ -52,3 +53,33 @@ sliderContainers.forEach(function(container) {
     showSlide(currentSlideIndex);
   });
 });
+     
+           // for the review
+// Get all the star elements
+const stars = document.querySelectorAll('.rating-section .star');
+const ratingValue = document.querySelector('.rating-section .rating-value');
+
+// Set the initial rating
+let rating = 4.5;
+updateStars(rating);
+
+// Add event listeners to the stars
+stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        rating = index + 1;
+        updateStars(rating);
+    });
+});
+
+function updateStars(rating) {
+    stars.forEach((star, index) => {
+        if (index < rating) {
+            star.classList.add('active');
+        } else {
+            star.classList.remove('active');
+        }
+    });
+
+    ratingValue.textContent = rating.toFixed(1);
+}
+

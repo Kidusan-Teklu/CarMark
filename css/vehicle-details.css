@@ -1,117 +1,163 @@
 /* AUTOR /kidusan Teklu*/
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Main content styles */
-  main {
-    padding: 40px;
-  }
-  
-  /* Vehicle details section styles */
-  .details {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    padding: 30px;
-  }
-  
-  .details h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Slider styles */
-  .slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .slider-image {
-    display: none;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  .slider-image.active {
-    display: block;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-nav {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  .footer-nav li {
-    margin-left: 20px;
-  }
-  
-  .footer-nav li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-nav li a:hover {
-    color: #ccc;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main content styles */
+main {
+  padding: 40px;
+}
+
+/* Vehicle details section styles */
+.details {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: sienna;
+} 
+.details:hover{ /* seach section when hovering */
+  background-color: #040507;
+color: #fff;
+}
+.price-changed{
+  text-decoration: line-through;
+  color: crimson;
+  font-weight: 600;
+}
+.new-price{
+  color: forestgreen;
+  font-weight: 600;
+}
+
+/* Slider styles */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider-image {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.slider-image.active {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.details-content{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 590;
+}
+.details-content h3{
+  color: chocolate;
+}
+/* rating*/
+.rating-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.rating-section h3 {
+color: blue;
+  margin-right: 10px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.stars .star {
+  cursor: pointer;
+}
+
+.rating-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-nav li {
+  margin-left: 20px;
+}
+
+.footer-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav li a:hover {
+  color: #ccc;
+}
