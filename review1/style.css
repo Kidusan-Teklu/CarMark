@@ -43,7 +43,7 @@ body{
     display: flex;
     justify-self: center;
 align-items: center;
-    grid-gap:5rem;
+    grid-gap:2rem;
     font-size:2rem;
     color:var(--yellow);
     margin-bottom: 2rem;
