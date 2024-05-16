@@ -1,7 +1,9 @@
 const allstar = document.queryselectorAll('.rating.star')
-              =document.queryselector('.rating input')
+const ratingvalue=document.queryselector('.rating input')
 allstar.foreach((item,idx)=>{
   item.addEventlistner('click',function (){
+    let click=0
+    ratingvalue.value=
     allstar.foreach(=>{
       i.classlist.replace('bxs-star','bx-star')
       allstar[i].classlist.remove('active')
