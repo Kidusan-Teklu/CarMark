@@ -43,9 +43,69 @@ body{
     justify-self: center;
 align-items: center;
     grid-gap:5rem;
-    font-size: 1rem;
+    font-size:2rem;
+    color:var(--yellow)
+    margin-bottom 2rem;
 }
-
+.rating .star{
+    cursor:pointer;
+}
+.rating .star.active{
+    opacity:0;;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forward;
+}
+@keyframes animate{
+    0%{
+        opacity:0;
+        transform:scale(0);
+    }
+    50%{
+        opacity:1;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+.rating .star:hover{
+    transform: scale(1.1);
+}
+textarea {
+    width:100%;
+    background:var(--light);
+    padding:1rem;
+    border-radus:.5rem;
+    border:none;
+    outline:none;
+    resize:none;
+    margin-bottom:.5rem;
+}
+.btn-group{
+    display:flex;
+    grid-gap: -5rem;
+    align-text:center;
+}
+.btn-group .btn{
+    padding:.75rem 1rem;
+    border-radius: .2rem;
+    border:none;
+    outline:none;
+    cursor:ponter;
+}
+.btn-group .btn.submit{
+    bacground:var(--blue);
+    color:var(--white);
+}
+.btn-group .btn.submit:hover{
+    background: var(--blue-d-1);
+}
+.btn-group .btn.cancel{
+    background:var(--blue);
+    color:var(--white);
+}
+.btn-group .btn.cancel:hover{
+    background: var(--blue-d-1);
+    
 
 
 
