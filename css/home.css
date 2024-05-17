@@ -161,6 +161,7 @@ section {
 .heading span {
     font-weight:500;
     color: var(--main-color);
+    font-size: 25px;
 }
 .heading p {
     font-size:0.938rem;
