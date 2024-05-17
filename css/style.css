@@ -1,160 +1,135 @@
-@import url('https://fonnts.googleapis.com/css?family=poppins:wght@300;400;500;600;700&display=swap');
-{
-    margin:0;
-    padding:0px;
-    box-sizing:border-box;
-    font-family:'poppins',sans-serif;
-    align-items:center;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f0f2f5;
 }
-:root{
-    --yellow:#FFBD13;
-    --blue:#4383FF;
-    --blue-d-1:#3278FF;
-    --light:#F5F5F5;
-    --grey:#AAA;
-    --white:#FFF;
-    --shadow:8px 8px 30px rgba(0,0,0,.05);
-}
-body{
-    background: var(--light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 
+#reviews {
+    padding: 50px 0;
 }
-.wrapper{
-    background: #111;
-    padding: 2rem;
-    max-width: 500px;
-    width: 100%;
-    border-radius: .75rem;
-    box-shadow: var(--shadow);
+
+.reviews-headings {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-headings span {
+    display: block;
+    font-size: 20px;
+    color: #333;
+}
+
+.reviews-headings h1 {
+    font-size: 36px;
+    color: #555;
+}
+
+.reviews-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reviews-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name-user {
+    margin-left: 10px;
+}
+
+.name-user strong {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.name-user span {
+    font-size: 14px;
+    color: #777;
+}
+
+.ratings i {
+    color: #ffba00;
+}
+
+.client-comment p {
+    font-size: 14px;
+    color: #555;
+}
+
+.container {
+    margin-top: 30px;
     text-align: center;
 }
-.wrapper h3{
-    font-size: 1rem;
-    font-weight: 250;
-    margin-bottom:1rem;
-    font-family: sans-serif;
-    color: #fe7;
+
+.textarea textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-.rating {
-    display: flex;
-    justify-self: center;
-align-items: center;
-    grid-gap:2rem;
-    font-size:2rem;
-    color:var(--yellow);
-    margin-bottom: 2rem;
+
+.btn-group {
+    margin-top: 10px;
 }
-.rating .star{
-    cursor:pointer;
+
+.btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
 }
-.rating .star.active{
-    opacity:0;;
-    animation: animate .5s calc(var(--i) * .1s) ease-in-out forward;
+
+.btn.cancel {
+    background: #dc3545;
 }
-@keyframes animate
-    0%{
-        opacity:0;
-        transform:scale(0);
-    }
-    50%{
-        opacity:1;
-        transform: scale(1.2);
-    }
-    100%{
-        opacity:1;
-        transform:scale(1);
-    }
-.rating .star:hover{
-    transform: scale(1.1);
-}
-textarea {
-    width:100%;
-    background:var(--light);
-    padding:1rem;
-    border-radus:.5rem;
-    border:none;
-    outline:none;
-    resize:none;
-    margin-bottom:.5rem;
-}
+
 .rating-section {
-    display: flex;
-    align-items: center;
     margin-top: 20px;
 }
 
 .rating-section h3 {
-    margin-right: 10px;
+    color: #333;
 }
 
 .stars {
     font-size: 24px;
-    margin-right: 10px;
+    color: #ffba00;
+    margin-bottom: 10px;
 }
 
-.stars .star {
-    cursor: pointer;
-    color: #ccc;
-    transition: color 0.3s;
+.stars .star:hover,
+.stars .star:hover~.star {
+    color: #ffba00;
 }
-
-.stars .star.active {
-    color: #ffc107;
-}
-
-.rating-value {
-    font-size: 18px;
-    font-weight: bold;
-}
-.btn-group{
-    display:flex;
-    grid-gap: -5rem;
-    align-text:center;
-}
-.btn-group .btn{
-    padding:.75rem 1rem;
-    border-radius: .4rem;
-    border:none;
-    outline:none;
-    cursor:ponter;
-}
-.btn-group .btn.submit{
-    bacground:var(--blue);
-    color:var(--blue);
-}
-.btn-group .btn.submit:hover{
-    background: var(--blue-d-1);
-}
-.btn-group .btn.cancel{
-    background:var(--blue);
-    color:var(--white);
-}
-.btn-group .btn.cancel:hover{
-    background: var(--blue-d-1);
-}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
