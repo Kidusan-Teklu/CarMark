@@ -7,15 +7,24 @@ h1
 {
     text-transform: capitalize;
     font-size: larger;
+    border: black solid 1px;
+    border-radius: 10px;
     box-shadow: lightblue 5px 10px 10px;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-weight: lighter;
+    width: fit-content;
+    padding: 12px;
+    align-items: right;
+    margin-left: 300px;
 }
+
+
 .search
 {
     display: flex;
+    margin-top: 20px;
  
 }
 input
