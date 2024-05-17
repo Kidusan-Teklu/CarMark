@@ -1,3 +1,13 @@
+        // Navigation Bar Functionality
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach((link) => {
+link.addEventListener('click', (e) => {
+e.preventDefault();
+const targetPage = e.target.getAttribute('href');
+window.location.href = targetPage;
+});
+});
         // for the slider 
 // Get all the slider containers
 var sliderContainers = document.querySelectorAll(".slider-container");
