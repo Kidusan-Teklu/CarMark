@@ -172,7 +172,7 @@ addHoverEffect(car5);
 addHoverEffect(car6);
 addHoverEffect(car7);
 
-//// styling the read more buttons by their tag name before hover
+//styling the read more buttons by their tag name before hover
  
 var element1=document.getElementById('readMoreBtns1');
 element1.style.color='red';
@@ -180,7 +180,7 @@ element1.style.cursor='pointer';
 //
 var element2=document.getElementById('readMoreBtns2');
 element2.style.color='red';
-element2.style.cursor='pointer';
+element2.style.cursor='pointer'; 
 //
 var element3=document.getElementById('readMoreBtns3');
 element3.style.color='red';
