@@ -5,74 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>list for carmark</title>
     <link rel="stylesheet" href="../css/car list.css">
-    <script src="../js/car list.js"></script>
+    <link rel="stylesheet" type="text/CSS" href="../css/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+      li a
+      {  
+        background-color: light;
+        border: solid black 0.1px;
+        padding: 10px;
+        border-radius: 10px;        
+
+      }       
+    </style>
+
 </head>
 <body>
-    
-<h1 class="hdr">List of available cars for sale</h1>
-    <div class="listpage">
+  <!-- page header-->
+<header>    
+    <div class="nav container">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#" class="logo"> <span>Car</span>mark</a>
+      <ul class="navbar">
+            <li><a href="/index.html" class="active">Home</a></1i>
+            <li><a href="/html/car _list.html">car List</a></1i>
+            <li><a href="/html/vehicle-details.html">Detail</a></1i>
+            <li><a href="/html/Payment-and-Checkout.html">payment</a></1i>
+            <li><a href="/html/rev.html">review</a></1i>   
+      </u1>
+    </div>
+</header>
 
-<!---->
+              <!--main body of the page-->                    <br> <br>
 
-        <div class="search">
-            <input type="search" id="search" placeholder="search car">
+<div class="listpage">                                <br><br> <br>
 
-        </div>
-        <div class="car">
-            <h3>Lotus Eletre</h3>
-            <img src="../images/detail/1 Lotus Eletre.webp" alt="Lotus-Eletre">
-            <div class="desc">The Lotus Eletre is an all-new, all-electric Hyper SUV from the British sports car manufacturer Lotus. It is a striking and progressive vehicle that takes the core principles and Lotus DNA from almost 75 years of sports car development.
-              <button type="button" onclick="alert('The Eletre R variant has a 112 kWh battery pack that provides a driving range of up to 500 km. It can charge at a rate of up to 350 kW, allowing it to add 400 km of range in just 20 minutes. The vehicle is powered by dual electric motors that produce a combined output of 603 bhp and 710 Nm of torque, enabling a top speed of 265 kmph.')">read more</button>
+    <div class="btn">
+      <h1 id="hdr">List of available cars for sale.</h1>
+          <button id="option1">Lotus Eletre</button>
+          <button id="option2">Mercedes-Benz G580</button>
+          <button id="option3">Hyundai Kona Electric</button>
+          <button id="option4">Renault Scenic</button>
+          <button id="option5">Hyundai Ioniq 6</button>
+          <button id="option6">Kia EV9</button>
+          <button id="option7">BMW i4</button>
+    </div>
 
-                </div>
-        </div>
-        <div class="car">
+      <div class="car">
+          <div id="car1">
+              <h3>Lotus Eletre</h3>
+              <img src="../images/detail/1 Lotus Eletre.webp" alt="Lotus-Eletre">
+              <div class="desc">The Lotus Eletre is an all-new, all-electric Hyper SUV from the British sports car manufacturer Lotus. 
+              It is a striking and progressive vehicle that takes the core principles and Lotus DNA from almost 75 years of sports car development.
+              <button id="readMoreBtns1" onclick="alert('The Eletre R variant has a 112 kWh battery pack that provides a driving range of up to 500 km. It can charge at a rate of up to 350 kW, allowing it to add 400 km of range in just 20 minutes. The vehicle is powered by dual electric motors that produce a combined output of 603 bhp and 710 Nm of torque, enabling a top speed of 265 kmph.')">read more</button>
+          </div>
+      </div>
+        
+        <div id="car2">
             <h3>Mercedes-Benz G580</h3>
             <img src="../images/detail/1-Mercedes-G580-review.webp" alt="Mercedes-G580">
             <div class="desc">The Mercedes-Benz G580 is an all-new, all-electric version of the iconic G-Class SUV.The G580 is powered by a 116 kWh battery pack that enables a driving range of 230-250 miles
-              <button type="button" onclick="alert('It can charge at up to 200 kW, allowing it to add 400 km of range in just 20 minutes. The vehicle has dual electric motors that produce a combined output of 579 hp and 859 lb-ft of torque, enabling a 0-60 mph time of 4.4 seconds and a top speed of 112 mph.Despite its large size and weight of over 6,900 lbs, the G580 retains the off-road capability of the traditional G-Class. It has features like independent torque at each corner, a 2-speed transmission with a low range mode, and G-steering that allows tight turns by overdriving the opposite rear wheel. The revised suspension maintains the G-Class\'s ability to isolate occupants from uneven terrain.Inside, the G580 has a modern MBUX infotainment system with off-road-specific displays, as well as options like rear-seat entertainment and a premium Burmester audio system. Safety tech includes adaptive cruise control, automatic emergency braking, and blind spot monitoring.The G580 is initially available in a well-equipped Edition One trim in the UK, priced at £180,860. More affordable versions may follow, but the G-Class lineup starts at £136,690 for the diesel G 450d model.')">read more</button>
-              
-</div>
+                <button id="readMoreBtns2" onclick="alert('It can charge at up to 200 kW, allowing it to add 400 km of range in just 20 minutes. The vehicle has dual electric motors that produce a combined output of 579 hp and 859 lb-ft of torque, enabling a 0-60 mph time of 4.4 seconds and a top speed of 112 mph.Despite its large size and weight of over 6,900 lbs, the G580 retains the off-road capability of the traditional G-Class. It has features like independent torque at each corner, a 2-speed transmission with a low range mode, and G-steering that allows tight turns by overdriving the opposite rear wheel. The revised suspension maintains the G-Class\'s ability to isolate occupants from uneven terrain.Inside, the G580 has a modern MBUX infotainment system with off-road-specific displays, as well as options like rear-seat entertainment and a premium Burmester audio system. Safety tech includes adaptive cruise control, automatic emergency braking, and blind spot monitoring.The G580 is initially available in a well-equipped Edition One trim in the UK, priced at £180,860. More affordable versions may follow, but the G-Class lineup starts at £136,690 for the diesel G 450d model.')">read more</button>
+            </div>
         </div>
-        <div class="car">
+
+          <div id="car3">
             <h3>Hyundai Kona Electric</h3>
             <img src="../images/detail/1-Hyundai-Kona-Electric.webp" alt="Hyundai-Kona-Electric">
-         <div class="desc">The Hyundai Kona Electric is an all-electric SUV that offers impressive performance and range.The Kona Electric is available with two battery pack options - a 39.2 kWh version.
-            <button type="button" onclick="alert('It provides up to 305 km of range, and a larger 64 kWh version that can travel up to 484 km on a single charge. Both variants are powered by an electric motor producing 134 hp and 395 Nm of torque, enabling 0-100 km/h acceleration in 7.9 seconds for the 64 kWh model and 9.9 seconds for the 39.2 kWh version.The Kona Electric features a modern interior with a twin-screen setup for the infotainment system and digital instrument cluster. It offers a spacious cabin and a large boot, making it a practical family SUV. Safety features include advanced driver assistance systems like forward collision warning, lane keep assist, and blind spot monitoring.Charging the Kona Electric is convenient, with the 64 kWh model able to add 400 km of range in just 20 minutes using a 100 kW DC fast charger. On a home wallbox, the 64 kWh battery can be fully recharged in 6 hours 50 minutes, while the 39.2 kWh version takes 4 hours 20 minutes.Overall, the Hyundai Kona Electric is a well-rounded electric SUV that combines practicality, performance, and long-range capability. It\'s a compelling option for those looking to make the switch to zero-emission driving.')">read more</button>
+            <div class="desc">The Hyundai Kona Electric is an all-electric SUV that offers impressive performance and range.The Kona Electric is available with two battery pack options - a 39.2 kWh version.
+                <button id="readMoreBtns3" onclick="alert('It provides up to 305 km of range, and a larger 64 kWh version that can travel up to 484 km on a single charge. Both variants are powered by an electric motor producing 134 hp and 395 Nm of torque, enabling 0-100 km/h acceleration in 7.9 seconds for the 64 kWh model and 9.9 seconds for the 39.2 kWh version.The Kona Electric features a modern interior with a twin-screen setup for the infotainment system and digital instrument cluster. It offers a spacious cabin and a large boot, making it a practical family SUV. Safety features include advanced driver assistance systems like forward collision warning, lane keep assist, and blind spot monitoring.Charging the Kona Electric is convenient, with the 64 kWh model able to add 400 km of range in just 20 minutes using a 100 kW DC fast charger. On a home wallbox, the 64 kWh battery can be fully recharged in 6 hours 50 minutes, while the 39.2 kWh version takes 4 hours 20 minutes.Overall, the Hyundai Kona Electric is a well-rounded electric SUV that combines practicality, performance, and long-range capability. It\'s a compelling option for those looking to make the switch to zero-emission driving.')">read more</button>
+            </div>
+          </div>
 
-         </div>
-        </div>
-        <div class="car">
+         <div id="car4">
             <h3>Renault Scenic</h3>
             <img src="../images/detail/1 Renault Scenic review.webp" alt="Renault Scenic">
-          <div class="desc">
-                The Renault Scenic is a mid-size family MPV that offers a blend of style, practicality, and efficiency. It features head-turning SUV looks and a unique infotainment system layout, making it stand out in its segment.
-                <button type="button" onclick="alert('The Scenic comes with a range of engine options, including diesel, petrol, and a diesel-electric hybrid variant that offers impressive fuel economy. It is equipped with advanced safety features like emergency city braking, cruise control, and Isofix child-seat mounting points.The Renault Scenic is praised for its spacious interior, large boot, and various storage compartments, providing ample space for families. It has a modern design with two-tone paint, blingy 20-inch alloy wheels, and a practical layout that includes a big boot, cubbyholes, and under-seat bins for storage. The engine range is extensive, catering to different preferences with manual and automatic transmission options.In terms of driving experience, the Renault Scenic offers accurate steering and good body control, although the ride quality may not be as settled due to the standard 20-inch wheels. The light steering is ideal for city driving but lacks feel on faster roads, and the manual gearbox may feel rubbery. The Renault Scenic is described as a very good car overall, offering a balance of space, efficiency, and a pleasant driving experience.Overall, the Renault Scenic is a stylish and practical family car that combines unique design elements with functionality and comfort, making it a compelling choice in the mid-size MPV segment.')">read more</button>
+            <div class="desc">The Renault Scenic is a mid-size family MPV that offers a blend of style, practicality, and efficiency. It features head-turning SUV looks and a unique infotainment system layout, making it stand out in its segment.
+                <button id="readMoreBtns4" type="button" onclick="alert('The Scenic comes with a range of engine options, including diesel, petrol, and a diesel-electric hybrid variant that offers impressive fuel economy. It is equipped with advanced safety features like emergency city braking, cruise control, and Isofix child-seat mounting points.The Renault Scenic is praised for its spacious interior, large boot, and various storage compartments, providing ample space for families. It has a modern design with two-tone paint, blingy 20-inch alloy wheels, and a practical layout that includes a big boot, cubbyholes, and under-seat bins for storage. The engine range is extensive, catering to different preferences with manual and automatic transmission options.In terms of driving experience, the Renault Scenic offers accurate steering and good body control, although the ride quality may not be as settled due to the standard 20-inch wheels. The light steering is ideal for city driving but lacks feel on faster roads, and the manual gearbox may feel rubbery. The Renault Scenic is described as a very good car overall, offering a balance of space, efficiency, and a pleasant driving experience.Overall, the Renault Scenic is a stylish and practical family car that combines unique design elements with functionality and comfort, making it a compelling choice in the mid-size MPV segment.')">read more</button>
+            </div>
           </div>
-        </div>
-        <div class="car">
+
+        <div id="car5">
             <h3>Hyundai Ioniq 6</h3>
             <img src="../images/detail/0-Hyundai-Ioniq-6.webp" alt="Hyundai-Ioniq-6">
             <div class="desc">The Hyundai Ioniq 6 is an all-new, all-electric mid-size fastback sedan that combines striking design, impressive performance, and long driving range.It is the second model in Hyundai's dedicated Ioniq electric vehicle sub-brand and the fourth vehicle built on the company's E-GMP platform.
-              <button type="button" onclick="alert('The Maserati GranTurismo is a series of grand tourers produced by the Italian manufacturer Maserati, succeeding the Maserati Coupé and Spyder. The first generation GranTurismo (M145) was introduced at the 2007 Geneva Motor Show and was produced from 2007 to December 2019. It set a record for the fastest development of a car, going from design to production in just nine months. The model featured a 4.2-litre V8 engine initially, which was later upgraded to a 4.7-liter engine in the GranTurismo S variant. The GranTurismo MC, a racing version developed for the FIA GT4 European Cup, and the GranTurismo MC Sport Line, a customisation programme, were also part of the lineup.The GranTurismo Sport, introduced in 2012, replaced the GranTurismo S and featured a revised 4.7-litre engine rated at 460 PS (340 kW; 450 hp). The GranTurismo MC Stradale, unveiled in 2011, is a more aerodynamic version with a 450 PS (330 kW; 440 hp) engine and reaching a top speed of 303 kilometres per hour (188 mph). The GranCabrio, the convertible version, was unveiled at the 2009 Frankfurt Motor Show and produced from 2010 to 2019. The GranCabrio Sport, introduced in 2011, featured a 450 PS (330 kW; 440 hp) engine.The second generation, GranTurismo II (M189), was revealed in 2022 and began production in April 2023.')">read more</button>
+                <button id="readMoreBtns5" type="button" onclick="alert('The Maserati GranTurismo is a series of grand tourers produced by the Italian manufacturer Maserati, succeeding the Maserati Coupé and Spyder. The first generation GranTurismo (M145) was introduced at the 2007 Geneva Motor Show and was produced from 2007 to December 2019. It set a record for the fastest development of a car, going from design to production in just nine months. The model featured a 4.2-litre V8 engine initially, which was later upgraded to a 4.7-liter engine in the GranTurismo S variant. The GranTurismo MC, a racing version developed for the FIA GT4 European Cup, and the GranTurismo MC Sport Line, a customisation programme, were also part of the lineup.The GranTurismo Sport, introduced in 2012, replaced the GranTurismo S and featured a revised 4.7-litre engine rated at 460 PS (340 kW; 450 hp). The GranTurismo MC Stradale, unveiled in 2011, is a more aerodynamic version with a 450 PS (330 kW; 440 hp) engine and reaching a top speed of 303 kilometres per hour (188 mph). The GranCabrio, the convertible version, was unveiled at the 2009 Frankfurt Motor Show and produced from 2010 to 2019. The GranCabrio Sport, introduced in 2011, featured a 450 PS (330 kW; 440 hp) engine.The second generation, GranTurismo II (M189), was revealed in 2022 and began production in April 2023.')">read more</button>
            </div>
         </div>
 
-        <div class="car">
+        <div id="car6">
             <h3>Kia EV9</h3>
             <img src="../images/detail/1 Kia EV9 review 2024.webp" alt="Kia EV9">
             <div class="desc">The Kia EV9 is a fully electric SUV that offers a unique blend of sleek design, advanced technology, and sustainable mobility. It is available in various trims, including the GT-line and Baseline, each distinguished by details such as dedicated front and rear bumpers, headlamps, wheels, and more.
-              <button type="button" onclick="alert('EV9 features a range of safety and driver assistance technologies, including forward collision avoidance, lane follow assist, blind-spot collision avoidance, and a 360-degree surround view monitor. It also offers advanced convenience features like a digital key, remote smart parking assist, and a premium sound system.In terms of performance, the EV9 lineup starts with a rear-wheel-drive model featuring a single electric motor that produces 215 horsepower. The all-wheel-drive models have a dual-motor arrangement, combining for 379 horsepower. The vehicle also features a heat pump for the climate-control system, heated front seats and steering wheel, and a host of driver-assistance features.The midrange Wind trim is considered to offer the most value, unlocking the more powerful all-wheel-drive powertrain and desirable standard features')">read more</button>
-        </div>
+              <button id="readMoreBtns6" type="button" onclick="alert('EV9 features a range of safety and driver assistance technologies, including forward collision avoidance, lane follow assist, blind-spot collision avoidance, and a 360-degree surround view monitor. It also offers advanced convenience features like a digital key, remote smart parking assist, and a premium sound system.In terms of performance, the EV9 lineup starts with a rear-wheel-drive model featuring a single electric motor that produces 215 horsepower. The all-wheel-drive models have a dual-motor arrangement, combining for 379 horsepower. The vehicle also features a heat pump for the climate-control system, heated front seats and steering wheel, and a host of driver-assistance features.The midrange Wind trim is considered to offer the most value, unlocking the more powerful all-wheel-drive powertrain and desirable standard features')">read more</button>
+            </div>
 
-        <div class="car">
+        <div id="car7">
             <h3>BMW i4</h3>
             <img src="../images/detail/1-BMW-i4.webp" alt="BMW-i4">
             <div class="desc">The BMW i4 is an all-electric luxury sedan that combines the brand's signature driving dynamics with zero-emission performance. It offers a range of up to 590 km and comes in two variants: the rear-wheel drive eDrive40 and the all-wheel drive M50.
-              <button type="button" onclick="alert('The i4 features a sleek, coupe-like design with a spacious interior that can seat up to five people comfortably. The cabin is well-appointed with premium materials and includes a large curved display that houses the iDrive 8 infotainment system.Under the hood, the eDrive40 produces 335 hp and 430 Nm of torque, while the M50 delivers an impressive 523 hp. Both models offer thrilling acceleration and engaging handling, thanks to their well-balanced chassis and powerful electric motors.The i4 comes equipped with a host of advanced safety and driver assistance features, including forward collision warning, automated emergency braking, lane departure warning, and lane-keeping assist. It also offers a competitive warranty package and complimentary maintenance for added peace of mind.Overall, the BMW i4 is a compelling choice for those seeking a luxurious, high-performance electric sedan with the practicality of a four-door body style and the convenience of a liftback trunk')">read more</button>
-    </div>
+                <button id="readMoreBtns7" type="button" onclick="alert('The i4 features a sleek, coupe-like design with a spacious interior that can seat up to five people comfortably. The cabin is well-appointed with premium materials and includes a large curved display that houses the iDrive 8 infotainment system.Under the hood, the eDrive40 produces 335 hp and 430 Nm of torque, while the M50 delivers an impressive 523 hp. Both models offer thrilling acceleration and engaging handling, thanks to their well-balanced chassis and powerful electric motors.The i4 comes equipped with a host of advanced safety and driver assistance features, including forward collision warning, automated emergency braking, lane departure warning, and lane-keeping assist. It also offers a competitive warranty package and complimentary maintenance for added peace of mind.Overall, the BMW i4 is a compelling choice for those seeking a luxurious, high-performance electric sedan with the practicality of a four-door body style and the convenience of a liftback trunk')">read more</button>
+            </div>                                  <br> <br>
+        </div>
+</div>
+
+  <div class="footer-box">
+    <h3>Follow</h3>
+    <a href="#"><i class='bx bxl-facebook'></i>facebook</a>
+    <a href="#"><i class='bx bxl-twitter'></i>twitter</a>
+    <a href="#"><i class='bx bxl-instagram'></i>instagram</a>
+    <a href="#"><i class='bx bxl-linkedin'></i>linkedin</a>
+   
+    
+    
+</div><section class="footer">
+  <div class="footer-container container">
+  <div class="footer-box">
+      <h3>our branches</h3>
+      <a href="#"><i class='bx bxs-map'></i>Washington</a>
+      <a href="#"><i class='bx bxs-map'></i>New york</a>
+      <a href="#"><i class='bx bxs-map'></i>Texas</a>
+      <a href="#"><i class='bx bxs-map'></i>California</a>
+      
+      
   </div>
+  <div class="footer-box">
+      <h3>quick links</h3>
+      <a href="/index.html"><i class='bx bx-right-arrow-alt'></i>home</a>
+      <a href="/html/car _list.html"><i class='bx bx-right-arrow-alt'></i>List</a>
+      <a href="/html/vehicle-details.html"><i class='bx bx-right-arrow-alt'></i>detail</a>
+      <a href="/html/Payment-and-Checkout.html"><i class='bx bx-right-arrow-alt'></i>payment</a>
+      <a href="/html/rev.html"><i class='bx bx-right-arrow-alt'></i>review</a>
+      
+</div>
+  <div class="footer-box">
+      <h3>contact us</h3>
+      <a href="#"><i class='bx bxs-phone'></i>(623) 214-0039</a>
+      <a href="#"><i class='bx bxs-phone'></i>(336) 661-7887</a>
+      <a href="#"><i class='bx bxs-envelope'></i>mallgrand211@gmail.com</a>
+      <a href="#"><i class='bx bxs-map'></i>USA, Washington -20001</a>
+     
+      
+  </div>
+    <div class="footer-box">
+      <h3>Follow</h3>
+      <a href="#"><i class='bx bxl-facebook'></i>facebook</a>
+      <a href="#"><i class='bx bxl-twitter'></i>twitter</a>
+      <a href="#"><i class='bx bxl-instagram'></i>instagram</a>
+      <a href="#"><i class='bx bxl-linkedin'></i>linkedin</a>   
+    </div>
+
+  </div>
+</section>
 
 
+
+<script src="../js/car list.js"></script>
 </body>
 </html>

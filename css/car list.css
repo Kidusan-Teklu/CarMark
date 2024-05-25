@@ -1,13 +1,22 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
 body
 {
 
     line-height: normal;
 }
+
 h1
 {
+    width: 470px;
+    height: 8px;
     text-transform: capitalize;
     font-size: larger;
-    border: black solid 1px;
+    border: none solid 1px;
     border-radius: 10px;
     box-shadow: lightblue 5px 10px 10px;
     color: black;
@@ -15,63 +24,52 @@ h1
     text-align: center;
     font-weight: lighter;
     width: fit-content;
-    padding: 12px;
+    padding: 30px;
     align-items: right;
     margin-left: 300px;
+    background-color: lightgoldenrodyellow;
 }
 
-
-.search
+#car1,#car2,#car3,#car4,#car5,#car6,#car7
 {
-    display: flex;
-    margin-top: 20px;
- 
+  margin-top: 10px; 
+  background-color: lightblue; 
 }
-input
-{
-  font-size: 15px;  
-  border-radius: 10px;
-  border: green 1px solid;
-  text-align: left;
-  padding-left: 20px;
-  background-color: lightgreen;
-  font-weight: bolder;
-  width: 20%;
-  height: 30px;
-}
-
-
-.listpage
-{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-.car
+img
 {
     border: solid black 0px;
-    padding: 10px;
+    padding: 60px;
     margin: 10px;
-    
-    
+    width: 50px;
+    border-radius:35px;
+ 
 }
-.car:hover
+.btn button 
+/*buttons on top*/
 {
-    text-shadow: 10px 5px 10px lightskyblue;
-    box-shadow: 5px 5px 10px lightsalmon;
-    border: solid rgb(0, 0, 0) 1px;
+    color: wheat;
+    background-color: rgb(41, 190, 121);
+    border: solid lightgreen 5px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 6px;
+    font-weight: bolder;
 }
-.car,img
 
+button
+/*read more button*/
 {
-
+    color: wheat;
+    background-color: black;
+    border: solid lightgreen 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 6px;
+    font-weight: bolder;
 }
-img:hover
+#car1 img,#car2 img,#car3 img,#car4 img,#car5 img,#car6 img,#car7 img
 {
-
-
-}
-script alert
-
-{
-    width: 100%;
+    width: 50%;
+    margin-left: 60px;
+    border-radius: 30px;
 }
